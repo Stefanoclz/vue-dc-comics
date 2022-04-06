@@ -1,38 +1,40 @@
 <template>
   <header>
-    <img src="../assets/dc-logo.png" alt="DC logo" />
-    <ul>
-      <li>
-        <a href="#">CHARACTERS</a>
-      </li>
-      <li>
-        <a href="#">COMICS</a>
-      </li>
-      <li>
-        <a href="#">MOVIES</a>
-      </li>
-      <li>
-        <a href="#">TV</a>
-      </li>
-      <li>
-        <a href="#">GAMES</a>
-      </li>
-      <li>
-        <a href="#">COLLECTIBLES</a>
-      </li>
-      <li>
-        <a href="#">VIDEOS</a>
-      </li>
-      <li>
-        <a href="#">FANS</a>
-      </li>
-      <li>
-        <a href="#">NEWS</a>
-      </li>
-      <li>
-        <a href="#">SHOP</a>
-      </li>
-    </ul>
+    <div class="container">
+      <img src="../assets/dc-logo.png" alt="DC logo" />
+      <ul>
+        <li>
+          <a href="#">CHARACTERS</a>
+        </li>
+        <li>
+          <a href="#">COMICS</a>
+        </li>
+        <li>
+          <a href="#">MOVIES</a>
+        </li>
+        <li>
+          <a href="#">TV</a>
+        </li>
+        <li>
+          <a href="#">GAMES</a>
+        </li>
+        <li>
+          <a href="#">COLLECTIBLES</a>
+        </li>
+        <li>
+          <a href="#">VIDEOS</a>
+        </li>
+        <li>
+          <a href="#">FANS</a>
+        </li>
+        <li>
+          <a href="#">NEWS</a>
+        </li>
+        <li>
+          <a href="#">SHOP</a>
+        </li>
+      </ul>
+    </div>
   </header>
 </template>
 
@@ -44,10 +46,15 @@ export default {
 
 <style scoped lang="scss">
 header {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
   background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  text-align: center;
   padding: 20px;
 
   img {
