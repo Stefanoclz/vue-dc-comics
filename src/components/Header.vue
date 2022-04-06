@@ -74,6 +74,7 @@ header {
 
     &:hover {
       border-bottom: 3px solid #0282f9;
+      color: #0282f9;
     }
   }
 
@@ -83,5 +84,9 @@ header {
     font-weight: bold;
     font-size: 13px;
   }
+}
+
+li:hover a {
+  color: #0282f9;
 }
 </style>
