@@ -1,6 +1,8 @@
 <template>
   <footer>
     <div class="container">
+      <!-- inizio sezione footer link -->
+
       <div class="info">
         <div class="link">
           <ul>
@@ -99,6 +101,12 @@
           </ul>
         </div>
       </div>
+
+      <!-- Fine sezione footer Link -->
+
+      <!-- Inizio sezione footer logo big DC -->
+
+      <div class="footerLogo"></div>
     </div>
   </footer>
 </template>
@@ -112,7 +120,6 @@ export default {
 <style scoped lang="scss">
 footer {
   background-image: url(../assets/footer-bg.jpg);
-  padding: 20px 0px;
 }
 
 .container {
@@ -121,7 +128,6 @@ footer {
   margin: auto;
   width: 70%;
   text-align: center;
-  padding: 20px;
 
   .info {
     display: flex;
@@ -130,6 +136,7 @@ footer {
 
   .link {
     text-align: left;
+    padding: 40px 20px;
 
     h3 {
       color: white;
@@ -150,5 +157,12 @@ footer {
       font-size: 13px;
     }
   }
+}
+
+.footerLogo {
+  background-image: url(../assets/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
 }
 </style>
