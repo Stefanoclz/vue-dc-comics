@@ -108,6 +108,24 @@
 
       <div class="footerLogo"></div>
     </div>
+    <!-- Inizio sezione Follow -->
+
+    <div class="bot-footer">
+      <div class="container-footer">
+        <div class="signup">
+          <button>SIGN UP NOW!</button>
+        </div>
+
+        <div class="followUs">
+          <h3>FOLLOW US</h3>
+          <img src="../assets/footer-facebook.png" alt="faceBook" />
+          <img src="../assets/footer-twitter.png" alt="twitter" />
+          <img src="../assets/footer-youtube.png" alt="youtube" />
+          <img src="../assets/footer-pinterest.png" alt="pinterest" />
+          <img src="../assets/footer-periscope.png" alt="periscope" />
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -164,5 +182,37 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   width: 50%;
+}
+
+.bot-footer {
+  background-color: #303030;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  padding: 40px 0px;
+
+  button {
+    color: white;
+    background-color: transparent;
+    padding: 15px 10px;
+    border: 2px solid #097df6;
+    font-size: 18px;
+  }
+
+  h3 {
+    color: #097df6;
+    font-size: 20px;
+  }
+
+  .followUs {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+  }
 }
 </style>
