@@ -3,23 +3,23 @@
     <div class="container">
       <div class="merch">
         <img src="../assets/buy-comics-digital-comics.png" alt="" />
-        <p>DIGITAL COMICS</p>
+        <a href="#">DIGITAL COMICS</a>
       </div>
       <div class="merch">
         <img src="../assets/buy-comics-merchandise.png" alt="" />
-        <p>DIGITAL MERCHANDISE</p>
+        <a href="#">DIGITAL MERCHANDISE</a>
       </div>
       <div class="merch">
         <img src="../assets/buy-comics-subscriptions.png" alt="" />
-        <p>DIGITAL SUBSCRIPTION</p>
+        <a href="#">DIGITAL SUBSCRIPTION</a>
       </div>
       <div class="merch">
         <img src="../assets/buy-comics-shop-locator.png" alt="" />
-        <p>DIGITAL COMIC SHOP LOCATOR</p>
+        <a href="#">DIGITAL COMIC SHOP LOCATOR</a>
       </div>
       <div class="merch">
         <img src="../assets/buy-dc-power-visa.svg" alt="" />
-        <p>DC POWER VISA</p>
+        <a href="#">DC POWER VISA</a>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style scope lang="scss">
+<style scoped lang="scss">
 .top {
   background-color: #0282f9;
 }
@@ -42,7 +42,7 @@ export default {
   width: 70%;
   text-align: center;
   padding: 40px 20px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   .merch {
     display: flex;
@@ -52,6 +52,12 @@ export default {
 
     img {
       width: 40px;
+    }
+
+    a {
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
     }
   }
 }
