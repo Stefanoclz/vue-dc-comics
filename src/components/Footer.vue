@@ -154,7 +154,7 @@ footer {
 
   .link {
     text-align: left;
-    padding: 40px 20px;
+    padding: 60px 20px;
 
     h3 {
       color: white;
