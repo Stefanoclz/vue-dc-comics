@@ -55,10 +55,10 @@ header {
   margin: auto;
   width: 70%;
   text-align: center;
-  padding: 20px;
 
   img {
     height: 80px;
+    margin: 20px 0px;
   }
 
   ul {
@@ -69,6 +69,12 @@ header {
 
   li {
     list-style-type: none;
+    padding-bottom: 48px;
+    margin-top: 50px;
+
+    &:hover {
+      border-bottom: 3px solid #0282f9;
+    }
   }
 
   a {
