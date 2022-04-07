@@ -4,6 +4,7 @@
       <img src="../assets/jumbotron.jpg" alt="jumbo" />
     </div>
     <div class="container">
+      <div class="current">CURRENT SERIES</div>
       <div class="card" v-for="(item, index) in comics" :key="index">
         <img :src="item.thumb" alt="cover" />
         <p>{{ item.series }}</p>
@@ -49,6 +50,17 @@ main {
   padding: 50px 0px;
   column-gap: 3%;
   row-gap: 80px;
+  position: relative;
+
+  .current {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    background-color: #097df6;
+    padding: 15px 20px;
+    font-weight: bolder;
+    font-size: 25px;
+  }
 }
 
 .card {
