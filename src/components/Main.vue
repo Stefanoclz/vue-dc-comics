@@ -6,8 +6,10 @@
     <div class="container">
       <div class="current">CURRENT SERIES</div>
       <div class="card" v-for="(item, index) in comics" :key="index">
-        <img :src="item.thumb" alt="cover" />
-        <p>{{ item.series }}</p>
+        <a href="#">
+          <img :src="item.thumb" alt="cover" />
+          <p>{{ item.series }}</p>
+        </a>
       </div>
     </div>
     <button>LOAD MORE</button>
@@ -67,6 +69,11 @@ main {
   width: calc(100% / 6) - 3%;
   height: 200px;
   text-align: left;
+  transition: transform 0.5s ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   img {
     width: 100%;
@@ -75,6 +82,11 @@ main {
     object-position: top;
     margin-bottom: 10px;
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 button {
@@ -82,6 +94,15 @@ button {
   padding: 10px 50px;
   background-color: #097df6;
   margin: 30px 0px;
-  border: none;
+  border: 1px solid transparent;
+  transition-property: border-radius, background-color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+
+  &:hover {
+    border-radius: 25px;
+    background-color: transparent;
+    border-color: white;
+  }
 }
 </style>
