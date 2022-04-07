@@ -1,7 +1,10 @@
 <template>
   <main>
     <div class="container">
-      <h2>-->Content goes Here --</h2>
+      <div class="card" v-for="(item, index) in comics" :key="index">
+        <img :src="item.thumb" alt="cover" />
+        <p>{{ item.series }}</p>
+      </div>
     </div>
   </main>
 </template>
@@ -9,6 +12,9 @@
 <script>
 export default {
   name: "mainPage",
+  props: {
+    comics: Array,
+  },
 };
 </script>
 
@@ -20,10 +26,23 @@ main {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
   width: 70%;
   align-items: center;
   padding: 50px 0px;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.card {
+  width: calc(100% / 6) - 3%;
+  height: 200px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
